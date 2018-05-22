@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Short URL</title>
+</head>
+<body>
+<form action="#" th:action="@{/url/convert}" th:object="${urlInfo}" method="post">
+    <label>Original URL</label><br>
+    <input type="url" style="width: 200px" th:field="*{originalUrl}" required="required">
+    <input type="submit" value="변환">
+</form>
+<form action="#" th:action="@{/url/connect}" th:object="${urlInfo}" method="post" th:target="_blank">
+    <label>Short URL</label><br>
+    <input type="url" style="width: 200px" th:field="*{shortUrl}" required="required">
+    <input type="submit" value="접속">
+</form>
+
+</body>
+</html>
