@@ -8,7 +8,7 @@ URL Shortening Service
     * URL Shortening Key는 길이를 8로 고정하여 생성
     * 동일한 URL에 대한 요청은 동일한 Shortening Key를 반환
     * Shortening된 URL을 요청받으면 원래 URL로 리다이렉트 처리
-    * Shortening Key 생성 알고리즘은 'a'~'z', 'A'~'Z', '0'~'9' 까지 총 62개의 문자를 사용하여 랜덤으로 key를 생성
+    * Shortening Key 생성 알고리즘은 'a' ~ 'z', 'A' ~ 'Z', '0' ~ '9' 까지 총 62개의 문자를 사용하여 랜덤으로 key를 생성
 
 * ###사용한 기술
     * Java1.8, SpringBoot2.0, gradle, thymeleaf
@@ -18,3 +18,4 @@ URL Shortening Service
 
 * ###프로젝트 실행 방법
     * ./gradlew bootrun
+    * 실행 후 localhost:8080 접속하여 테스트
